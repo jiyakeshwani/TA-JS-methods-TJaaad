@@ -32,19 +32,36 @@ Example:
    - `charAt` accepts a index (number data type) and return the character on that index in the string.
 
 2. `toUpperCase`
+name.toUpperCase();
 3. `toLowerCase`
+name.toLowerCase();
 4. `trim`
+name.trim();
 5. `trimEnd`
+name.trimEnd();
 6. `trimStart`
+name.trimStart();
 7. `concat`
+name.concat('' , sentance);
 8. `endsWith`
+name.endsWith('k');
 9. `includes`
+name.includes('t')
 10. `indexOf`
+name.indexOf('a');
 11. `lastIndexOf`
+name.lastIndexOf("k")
 12. `padEnd`
+name.padEnd(6);
 13. `padStart`
+name.padStart(8);
 14. `repeat`
+name.repeat(7);
 15. `replace`
+name.replace('Arya' , 'John');
 16. `slice`
+name.slice(5);
 17. `split`
+name.split(' ');
 18. `substring`
+name.substring(6);

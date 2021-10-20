@@ -25,32 +25,58 @@ Example:
      ```js
      let numbers = [1, 2, 3];
      numbers.concat(4); //[1,2,3,4]
-     let sentanceArray = 'A quick brown fox jumped over a lazy'.split(' ');
-     sentanceArray.concat('dog').join(' '); //"A quick brown fox jumped over a lazy dog"
-     let colors = ['red', 'green', 'blue'];
-     colors.concat('black', 'red', 21, true); // ['red','green','blue','black', 'red', 21, true]
+     let sentanceArray = "A quick brown fox jumped over a lazy".split(" ");
+     sentanceArray.concat("dog").join(" "); //"A quick brown fox jumped over a lazy dog"
+     let colors = ["red", "green", "blue"];
+     colors.concat("black", "red", 21, true); // ['red','green','blue','black', 'red', 21, true]
      ```
    - `concat` accepts n number of values and returns one array with all the values in same order. It does not change the original array.
    - No it does not mutate the original array
 
 2. `join`
+   numbers.join('-');
 3. `flat`
+   numbers.flat();
 4. `push`
+   colors.push('yellow');
 5. `indexOf`
+   numbers.indexOf('2');
 6. `lastIndexOf`
+   numbers.lastIndexOf();
 7. `includes`
+   colors.includes("red");
 8. `reverse`
+   numbers.reverse();
 9. `every`
+   numbers.every(functionname);
 10. `shift`
+    numbers.shift();
 11. `splice`
+    numbers.splice(0 '0');
 12. `find`
+    colors.find('blue');
 13. `unshift`
+    numbers.unshift();
 14. `findIndex`
+    numbers.findIndex(2);
 15. `filter`
+    numbers.filter(word => word.length > 2);
 16. `flat`
+    colors.flat();
 17. `forEach`
+    numbers.forEach(number => console.log(number));
 18. `map`
+    numbers.map(number => number \* 2);
 19. `pop`
+    colors.pop();
 20. `reduce`
+    let array1 = [1, 2, 3, 4];
+    let reducer = (acc, currentValue) => acc + currentValue;
+    console.log(array1.reduce(reducer));
+
 21. `slice`
+    numbers.slice(1);
 22. `some`
+    let even = (number) => number % 2 === 0;
+
+numbers.some(even);

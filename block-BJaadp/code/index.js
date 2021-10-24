@@ -16,17 +16,38 @@ let persons = [
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
-
+let average = [18 , 12 , 16 , 2 , 4 , 18 , 5,13 , 15 , 9 , 17 , 14]
+average.reduce(function findSum (acc , cv){
+acc = acc + cv;
+return acc;
+}, 0)
+function findAverage(arr){
+  return findSum / 12
+};
 // Find the average grade of male
-
+let averageMale = [18 , 16 , 2 , 4 ,  5 , 17 ]
+averageMale.reduce(function findSum (acc , cv){
+acc = acc + cv;
+return acc;
+}, 0)
+function findAverage(arr){
+  return findSum / 12
+};
 // Find the average grade of female
-
+let averageFemale = [ 12 ,   18 , 13 , 15 , 9 , 14]
+averageFemale.reduce(function findSum (acc , cv){
+acc = acc + cv;
+return acc;
+}, 0)
+function findAverage(arr){
+  return findSum / 12
+};
 // Find the highest grade
-
+persons.grade.find(grade.lenght)
 // Find the highest grade in male
-
+averageMale.find(grade.lenght)
 // Find the highest grade in female
-
+averageFemale.find(grade.lenght)
 // Find the highest grade for people whose name starts with 'J' or 'P'
 
 const fruitBasket = [
@@ -46,12 +67,17 @@ const fruitBasket = [
 /* 
 
 Use the fruitBasket array to create an object where key will be the fruit and value will be the number of times
-that fruit has appeared in the array. Store it in new variable fruitsObj
+that fruit has appeared in the array. Store it in new variable fruitsObj.
+
 
 Output: 
 {banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1}
 */
-
+let fruitsObj = {banana: 2,
+cherry : 3,
+orange : 3,
+apple : 2,
+};
 /* 
 
 Use the fruitBasket array to create an array of array. Each array will contain two values name of fruit and number of times
@@ -70,7 +96,7 @@ const data = [
 ];
 
 // Using reduce flat data array
-
+data.flat(Infinity)
 const dataTwo = [
   [1, 2, 3],
   [4, 5, 6],
@@ -79,7 +105,7 @@ const dataTwo = [
 ];
 
 // Using reduce flat dataTwo array
-
+dataTwo.flat(Infinity);
 /*
 
 Create these functions which accepts a number value and returns a number value:
